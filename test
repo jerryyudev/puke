@@ -1,0 +1,93 @@
+#初始化
+#导入库
+import random
+va1 = 0
+va2 = 0
+va3 = 0
+va4 = 0
+va5 = 0
+va6 = 0
+#a是实验的次数,可自行改变
+a = 1
+for i in range(a):
+    #抽取60次
+    for i in range(60):
+        number = random.randrange(1,25)
+        #print(number)
+        #一个24种可能
+        if number == 1:
+            va1 = va1 + 1
+        if number == 2:
+            va2 = va2 + 1
+        if number == 3:
+            va3 = va3 + 1
+        if number == 4:
+            va4 = va4 + 1
+        if number == 5:
+            va5 = va5 + 1
+        if number == 6:
+            va6 = va6 + 1
+        if number == 7:
+            va1 = va1 + 1
+        if number == 8:
+            va2 = va2 + 1
+        if number == 9:
+            va3 = va3 + 1
+        if number == 10:
+            va4 = va4 + 1
+        if number == 11:
+            va5 = va5 + 1
+        if number == 12:
+            va6 = va6 + 1
+        if number == 13:
+            va1 = va1 + 1
+        if number == 14:
+            va2 = va2 + 1
+        if number == 15:
+            va3 = va3 + 1
+        if number == 16:
+            va4 = va4 + 1
+        if number == 17:
+            va5 = va5 + 1
+        if number == 18:
+            va6 = va6 + 1
+        if number == 19:
+            va1 = va1 + 1
+        if number == 20:
+            va2 = va2 + 1
+        if number == 21:
+            va3 = va3 + 1
+        if number == 22:
+            va4 = va4 + 1
+        if number == 23:
+            va5 = va5 + 1
+        if number == 24:
+            va6 = va6 + 1
+    #输出次数
+    print('出现次数')
+    print('1:'+str(va1))
+    print('2:'+str(va2))
+    print('3:'+str(va3))
+    print('4:'+str(va4))
+    print('5:'+str(va5))
+    print('6:'+str(va6))
+    print('出现概率')
+    #计算概率
+    gl1 = (str(va1/60*100)+'%')
+    gl2 = (str(va2/60*100)+'%')
+    gl3 = (str(va3/60*100)+'%')
+    gl4 = (str(va4/60*100)+'%')
+    gl5 = (str(va5/60*100)+'%')
+    gl6 = (str(va6/60*100)+'%')
+    #输出概率
+    print('1:'+str(gl1)+'%')
+    print('2:'+str(gl2)+'%')
+    print('3:'+str(gl3)+'%')
+    print('4:'+str(gl4)+'%')
+    print('5:'+str(gl5)+'%')
+    print('6:'+str(gl6)+'%')
+#辅助程序
+#if va1 + va2 + va3 + va4 + va5 + va6 == 60:
+    #print('true')
+#else:
+    #print('error')
