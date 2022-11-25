@@ -1,0 +1,90 @@
+#初始化
+#导入库
+import random
+va1 = va2 = va3 = va4 = va5 = va6 = 0
+ava = avb = avc = avd = ave = avf = 0
+gl1 = gl2 = gl3 = gl4 = gl5 = gl6 = 0
+zgl1 = zgl2 = zgl3 = zgl4 = zgl5 = zgl6 = 0
+#a是实验的次数,可自行改变
+a = 3
+#b千万不要改
+b = 0
+for i in range(a):
+    #抽取60次
+    for i in range(60):
+        number = random.randrange(1,25)
+        #print(number)
+        #一个24种可能
+        if number == 1 or number == 2 or number == 3 or number == 4:
+            va1 = va1 + 1
+        if number == 5 or number == 6 or number == 7 or number == 8:
+            va2 = va2 + 1
+        if number == 9 or number == 10 or number == 11 or number == 12:
+            va3 = va3 + 1
+        if number == 13 or number == 14 or number == 15 or number == 16:
+            va4 = va4 + 1
+        if number == 17 or number == 18 or number == 19 or number == 20:
+            va5 = va5 + 1
+        if number == 21 or number == 22 or number == 23 or number == 24:
+            va6 = va6 + 1
+    b = b+1
+    #输出次数
+    print('第'+str(b)+'次出现次数')
+    print('1:'+str(va1)+'次')
+    print('2:'+str(va2)+'次')
+    print('3:'+str(va3)+'次')
+    print('4:'+str(va4)+'次')
+    print('5:'+str(va5)+'次')
+    print('6:'+str(va6)+'次')
+    print('第'+str(b)+'出现概率')
+    #计算概率
+    gl1 = (va1/60*100)
+    gl2 = (va2/60*100)
+    gl3 = (va3/60*100)
+    gl4 = (va4/60*100)
+    gl5 = (va5/60*100)
+    gl6 = (va6/60*100)
+    #输出概率
+    float(gl1)
+    float(gl2)
+    float(gl3)
+    float(gl4)
+    float(gl5)
+    float(gl6)
+    print('1:'+str(gl1/b)+'%')
+    print('2:'+str(gl2/b)+'%')
+    print('3:'+str(gl3/b)+'%')
+    print('4:'+str(gl4/b)+'%')
+    print('5:'+str(gl5/b)+'%')
+    print('6:'+str(gl6/b)+'%')
+    ava = ava + va1
+    avb = avb + va2
+    avc = avc + va3
+    avd = avd + va4
+    ave = ave + va5
+    avf = avf + va6
+    zgl1 = zgl1 + gl1/b
+    zgl2 = zgl2 + gl2/b
+    zgl3 = zgl3 + gl3/b
+    zgl4 = zgl4 + gl4/b
+    zgl5 = zgl5 + gl5/b
+    zgl6 = zgl6 + gl6/b
+print('总出现次数')
+print('1:'+str(ava)+'次')
+print('2:'+str(avb)+'次')
+print('3:'+str(avc)+'次')
+print('4:'+str(avd)+'次')
+print('5:'+str(ave)+'次')
+print('6:'+str(avf)+'次')
+print('总出现概率')
+print('1:'+str(zgl1/a)+'%')
+print('2:'+str(zgl2/a)+'%')
+print('3:'+str(zgl3/a)+'%')
+print('4:'+str(zgl4/a)+'%')
+print('5:'+str(zgl5/a)+'%')
+print('6:'+str(zgl6/a)+'%')
+#辅助程序
+#if va1 + va2 + va3 + va4 + va5 + va6 == 60:
+    #print('true')
+#else:
+    #print('error')
